@@ -1,0 +1,46 @@
+.main-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100vw;
+}
+
+.textarea-div h1 {
+  font-family: "Honk";
+  font-size: 2.75rem;
+}
+
+.textarea-div textarea {
+  font-family: "Montserrat";
+  padding: 20px;
+  background-color: #ededd0;
+  font-size: 1.25rem;
+  width: 400px;
+  height: 500px;
+  border: none;
+  border-radius: 10px;
+}
+
+.btn {
+  width: 180px;
+  height: 50px;
+  margin: 20px;
+  border-radius: 10px;
+  border: none;
+  font-family: "Montserrat";
+  font-size: 1.25rem;
+  font-weight: bold;
+  background-color: #f5b0cb;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, box-shadow;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #d597ce;
+}
+
+.btn:active {
+  transform: translateY(3px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0);
+}
