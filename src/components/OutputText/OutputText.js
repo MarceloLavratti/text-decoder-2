@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./OutputTextStyle.css";
-import lofi from "../../images/lofi.png";
 
 function OutputText({ encryptedText }) {
   const [outputText, setOutputText] = useState(encryptedText);
+
+  useEffect(() => {
+    setOutputText(encryptedText);
+  }, [encryptedText]);
 
   const handleCopyClick = async () => {
     try {

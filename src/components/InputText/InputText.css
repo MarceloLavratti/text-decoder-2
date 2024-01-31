@@ -2,7 +2,10 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 100vw;
+}
+
+.textarea-div {
+  opacity: 0.7;
 }
 
 .textarea-div h1 {
