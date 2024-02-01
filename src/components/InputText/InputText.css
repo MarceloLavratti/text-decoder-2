@@ -1,28 +1,48 @@
-.main-div-input {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  width: 100vw;
+@import url("https://fonts.googleapis.com/css2?family=Honk&display=swap");
+
+h1 {
+  font-family: "Honk";
+  font-size: 3.5rem;
+  margin: 50px;
 }
 
-.textarea-div {
+.main-div-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.texts {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: space-evenly;
+}
+
+.textarea-btn-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  height: 700px;
+}
+
+textarea {
+  width: 400px;
+  height: 400px;
+  background-color: #ededd0;
+  border-radius: 10px;
+  padding: 15px;
+  font-family: "Montserrat";
+  font-size: 1.25rem;
+  margin: 0;
   opacity: 0.7;
 }
 
-.textarea-div h1 {
-  font-family: "Honk";
-  font-size: 2.75rem;
-}
-
-.textarea-div textarea {
-  font-family: "Montserrat";
-  padding: 20px;
-  background-color: #ededd0;
-  font-size: 1.25rem;
-  width: 400px;
-  height: 370px;
-  border: none;
-  border-radius: 10px;
+.btn-div {
+  display: flex;
+  flex-direction: row;
 }
 
 .btn {
@@ -51,10 +71,28 @@
 
 @media (max-width: 768px) {
   .main-div-input {
-    flex-direction: column;
   }
-  .textarea-div textarea {
-    width: 320px;
+
+  h1 {
+    font-size: 1.55rem;
+    margin: 20px;
+  }
+
+  .texts {
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+  }
+  .textarea-btn-div {
+    width: 300px;
+  }
+  textarea {
+    width: 300px;
     height: 150px;
+  }
+
+  .btn {
+    width: 130px;
+    font-size: 1rem;
   }
 }

@@ -21,10 +21,12 @@ function OutputText({ encryptedText }) {
   };
 
   return (
-    <div className="output-style">
-      <p>{outputText}</p>
-      {/* <img src={lofi} /> */}
+    <div className="main-div-output">
       <div>
+        <p>{outputText}</p>
+      </div>
+
+      <div className="btn-div">
         <button className="btn" onClick={handleCopyClick}>
           Copiar
         </button>

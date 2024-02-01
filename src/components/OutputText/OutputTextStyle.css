@@ -1,30 +1,30 @@
-.output-style {
+.main-div-output {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 500px;
+  height: 700px;
 }
 
-.output-style p {
-  word-wrap: break-word;
-  background-color: #ededd0;
+p {
   width: 400px;
-  height: 370px;
-  font-family: "Montserrat";
-  font-weight: 500;
-  font-size: 1.25rem;
-  padding: 20px;
+  height: 400px;
+  background-color: #ededd0;
   border-radius: 10px;
+  padding: 15px;
   margin: 0;
+  font-family: "Montserrat";
+  font-size: 1.25rem;
   opacity: 0.7;
-}
-
-.output-style img {
-  opacity: 1;
+  word-wrap: break-word;
 }
 
 @media (max-width: 768px) {
-  .output-style p {
-    width: 320px;
+  .main-div-output {
+    width: 300px;
+  }
+  p {
+    width: 300px;
     height: 150px;
   }
 }

@@ -47,24 +47,28 @@ function InputText() {
   return (
     <div className="main-div-input">
       <div>
-        <div className="textarea-div">
+        <h1>Decodificador de Texto</h1>
+      </div>
+      <div className="texts">
+        <div className="textarea-btn-div">
           <textarea
             type="text"
             placeholder="Digite seu texto aqui (apenas letras minúsculas, sem acentos ou caracteres especiais)."
             onChange={(e) => setText(e.target.value)}
           ></textarea>
+          <div className="btn-div">
+            <button className="btn" onClick={handleEncryptClick}>
+              Criptografar
+            </button>
+            <button className="btn" onClick={handleDecryptClick}>
+              Descriptografar
+            </button>
+          </div>
         </div>
+
         <div>
-          <button className="btn" onClick={handleEncryptClick}>
-            Criptografar
-          </button>
-          <button className="btn" onClick={handleDecryptClick}>
-            Descriptografar
-          </button>
+          <OutputText encryptedText={encryptedText} />
         </div>
-      </div>
-      <div>
-        <OutputText encryptedText={encryptedText} />
       </div>
     </div>
   );
