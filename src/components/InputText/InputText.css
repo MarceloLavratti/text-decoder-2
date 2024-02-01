@@ -75,14 +75,14 @@ textarea {
 
   h1 {
     font-size: 1.55rem;
-    margin: 20px;
+    margin-top: 70px;
   }
 
   .texts {
     flex-direction: column;
     align-items: center;
     max-width: 100%;
-    margin: 50px;
+    margin: 10px;
   }
   .textarea-btn-div {
     width: 100%;
