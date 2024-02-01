@@ -45,7 +45,7 @@ function InputText() {
   };
 
   return (
-    <div className="main-div">
+    <div className="main-div-input">
       <div>
         <div className="textarea-div">
           <textarea

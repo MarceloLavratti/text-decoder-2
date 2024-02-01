@@ -1,7 +1,8 @@
-.main-div {
+.main-div-input {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  width: 100vw;
 }
 
 .textarea-div {
@@ -19,7 +20,7 @@
   background-color: #ededd0;
   font-size: 1.25rem;
   width: 400px;
-  height: 500px;
+  height: 370px;
   border: none;
   border-radius: 10px;
 }
@@ -46,4 +47,14 @@
 .btn:active {
   transform: translateY(3px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0);
+}
+
+@media (max-width: 768px) {
+  .main-div-input {
+    flex-direction: column;
+  }
+  .textarea-div textarea {
+    width: 320px;
+    height: 150px;
+  }
 }
