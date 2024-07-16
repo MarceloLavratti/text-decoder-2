@@ -1,2 +1,2 @@
 Projeto em React de um codificador/decodificador de texto
-![image](https://github.com/user-attachments/assets/c50ea2f3-0598-4cad-a885-fcd656e59bc0)
+![image](https://github.com/user-attachments/assets/e6f9883c-8b67-4bd6-8fa3-dd1ca3ff2b2b)
